@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
           balance: recipientData.balance + amount,
           notifications: firebase.firestore.FieldValue.arrayUnion({
             from: senderData.firstName,
-            message: `You received MK ${amount.toFixed(2)}.`,
+            message: `Wakutumizilani MK ${amount.toFixed(2)}.`,
             timestamp: new Date().toISOString()
           })
         });
